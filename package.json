@@ -13,5 +13,10 @@
   },
   "dependencies": {
     "plotly.js-mapbox-dist-min": "^1.57.1"
+  },
+  "targets": {
+    "main": {
+      "publicUrl": "https://hayk.earth/map"
+    }
   }
 }
