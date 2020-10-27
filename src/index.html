@@ -33,13 +33,15 @@
 				lon: settleLon,
                 lat: settleLat,
                 marker: { color: "crimson", size: settleBombs },
+                hoverinfo: "text"
+
 			}
         ];
 
 		var layout = {
 			dragmode: "zoom",
 			mapbox: { style: "open-street-map", center: { lat: 39.7917, lon: 46.7688 }, zoom: 8 },
-			margin: { r: 0, t: 0, b: 0, l: 0 }
+            margin: { r: 0, t: 0, b: 0, l: 0 }
 		};
 
 		Plotly.newPlot("map", data, layout);
