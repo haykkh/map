@@ -1,4 +1,4 @@
-import Plotly from 'plotly.js-dist'
+import Plotly from 'plotly.js-mapbox-dist-min'
 
 Plotly.d3.csv(
 	"https://raw.githubusercontent.com/plotly/datasets/master/2015_06_30_precipitation.csv",
@@ -25,6 +25,6 @@ Plotly.d3.csv(
 			margin: { r: 0, t: 0, b: 0, l: 0 }
 		};
 
-		Plotly.newPlot("myDiv", data, layout);
+		Plotly.newPlot("map", data, layout);
 	}
 );
