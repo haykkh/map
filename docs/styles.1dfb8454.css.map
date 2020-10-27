@@ -1,0 +1,1 @@
+{"mappings":"AAAA,KACI,QCCJ,CDEA,KACI,YCCJ","sources":["./src/styles/styles.scss","./<input css 1>"],"sourcesContent":["body {\n    margin: 0\n}\n\n#map {\n    height: 100vh;\n}","body {\n  margin: 0;\n}\n\n#map {\n  height: 100vh;\n}\n/*# sourceMappingURL=styles.1dfb8454.css.map */\n"],"names":[],"version":3,"file":"styles.1dfb8454.css.map"}
