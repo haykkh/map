@@ -1,7 +1,7 @@
 {
   "name": "map",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "docs/index.html",
   "license": "MIT",
   "scripts": {
     "start": "parcel serve ./src/index.html",
@@ -9,6 +9,9 @@
   },
   "devDependencies": {
     "parcel": "^2.0.0-beta.1",
-    "plotly.js-dist": "^1.57.1"
+    "sass": "^1.27.0"
+  },
+  "dependencies": {
+    "plotly.js-mapbox-dist-min": "^1.57.1"
   }
 }
