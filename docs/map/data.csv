@@ -1,3 +1,4 @@
-Hrapx,Hrapy,Lat,Lon,Globvalue
-0,0,39.7917,46.7688,'hello'
-0,0,40.177200,44.503490,'why'
+Lat,Lon,Name,Bombs
+39.8245,46.7520,Stepanakert,100
+40.2117,46.8235,Martakert,20
+40.177200,44.503490,why,1

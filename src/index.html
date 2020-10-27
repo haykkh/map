@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles.scss">
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-    <title>Document</title>
+    <title>Artsakh Map</title>
 </head>
 <body>
     <div id="map"></div>
@@ -18,15 +18,23 @@
 				return row[key];
 			});
         }
+
+        var settleLat = unpack(rows, "Lat"),
+            settleLon = unpack(rows, "Lon"),
+            settleBombs = unpack(rows, "Bombs"),
+            settleName = unpack(rows, "Name")
+            settleText = settleName.map((a, i) => `${a}: ${settleBombs[i]} bombs`)
+
+
 		var data = [
 			{
 				type: "scattermapbox",
-				text: unpack(rows, "Globvalue"),
-				lon: unpack(rows, "Lon"),
-				lat: unpack(rows, "Lat"),
-				marker: { color: "crimson", size: 10 }
+				text: settleText,
+				lon: settleLon,
+                lat: settleLat,
+                marker: { color: "crimson", size: settleBombs },
 			}
-		];
+        ];
 
 		var layout = {
 			dragmode: "zoom",
